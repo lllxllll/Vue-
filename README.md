@@ -1,19 +1,13 @@
-# myproject
+利用Vue搭建脚手架，实现了个人博客的制作
 
-## Project setup
-```
-npm install
-```
+1.主要功能
+（1）点击导航栏的标签，跳转到相应的页面
+（2）在评论区发布评论，删除评论区的内容
+（3）发布不同主题的博客并且，在博客显示区显示
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+2.采用的技术
+（1）博客的框架利用html5搭建
+（2）样式采用了CSS3的新增属性
+（3）页面跳转通过vue-router实现
+（4）实现数据的get/post功能
+（5）使用了vue中的事件处理/条件渲染
