@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script src="validate.js"></script>
+    <script src="input.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <div class="wrap-header">
+        <h1>请登录</h1>
+    </div>
+    <div class="wrap wrap-sm">
+        <div class="header"></div>
+        <div class="form">
+            <form action="" id="signup">
+                <div class="input-wrap all">
+                    <label>姓名</label>
+                    <input type="text"
+                           data-rule='minLength:3'
+                           name="name"
+                           class="input-control">
+                    <div id="name-input-error" class="input-error">
+                        姓名格式有误
+                    </div>
+                </div>
+                <div class="input-wrap all">
+                    <label for="">用户名</label>
+                    <input type="text"
+                           data-rule='pattern:"^[a-z]"|required:true'
+                           name="username"
+                           class="input-control">
+                    <div id="username-input-error" class="input-error">
+                        用户名格式有误
+                    </div>
+                </div>
+                <div class="input-wrap all">
+                    <label for="">年龄</label>
+                    <input type="text"
+                           data-rule='max:30|min:18|required:true|numeric:true'
+                           name="age"
+                           class="input-control" >
+                    <div id="age-input-error" class="input-error">
+                        年龄格式有误
+                    </div>
+                </div>
+                <div class="input-wrap all">
+                    <label for="">密码</label>
+                    <input type="text"
+                           data-rule='pattern:"^[a-z0-9]"|required:true|maxlength:8'
+                           name="password"
+                           class="input-control">
+                    <div id="password-input-error" class="input-error">
+                        密码格式有误
+                    </div>
+                </div>
+                <div class="input-wrap sex ">
+                    <label for="">性别</label>
+                    <label for="" class="sex"><input type="radio">男</label>
+                    <label for=""><input type="radio">女</label>
+<!--                    <div class="input-error">-->
+<!--                        姓名格式有误-->
+<!--                    </div>-->
+                </div>
+
+                <button type="submit">登录</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
